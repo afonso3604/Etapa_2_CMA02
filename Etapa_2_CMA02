@@ -1,0 +1,107 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int main()
+{
+    system("color F0");
+    int funcionarios, opcao, idade, cpf, telefone, a;
+    char nome[50], cargo[50], sexo[50], email[50];
+
+    do
+    {
+
+    printf("\n========================================================================================================================\n\n");
+    printf("\t\t\t\t\t\tSeja bem vindo(a) ao CEFETECH\n");
+    printf("\n========================================================================================================================\n\n");
+    printf("\tO que voce gostaria de fazer?\n\n");
+    printf("\t[1] Cadastrar um novo funcionario\n");
+    printf("\t[2] Consultar funcionarios cadastrados\n");
+    printf("\t[3] Sair do programa\n\n");
+
+    printf("\tDigite o numero referente a opcao que voce deseja executar: ");
+    scanf("%d", &opcao);
+    system("cls");
+
+
+    if(opcao==1)
+    {
+        printf("\n========================================================================================================================\n\n");
+        printf("\t\t\t\t\t\tCadastro de funcionarios CEFETECH\n");
+        printf("\n========================================================================================================================\n\n");
+        printf("\tDigite quantos funcionarios voce deseja cadastrar:");
+        scanf("%d", &funcionarios);
+
+        for(a=0; a<funcionarios; a++)
+        {
+            system("cls");
+            printf("\n========================================================================================================================\n\n");
+            printf("\t\t\t\t\t\tCadastro de funcionarios\n");
+            printf("\n========================================================================================================================\n\n");
+
+            printf("\tNome: ");
+            scanf("%s", &nome);
+            printf("\tSexo: ");
+            scanf("%s", &sexo);
+            printf("\tTelefone de contato: ");
+            scanf("%d", &telefone);
+            printf("\tCPF: ");
+            scanf("%d", &cpf);
+            printf("\tIdade: ");
+            scanf("%d", &idade);
+            printf("\tEmail: ");
+            scanf("%s", &email);
+            printf("\tCargo na empresa: ");
+            scanf("%s", &cargo);
+
+            system("pause");
+
+
+        }
+
+        system("cls");
+
+    }
+
+    if(opcao==2)
+    {
+        printf("\n========================================================================================================================\n\n");
+        printf("\t\t\t\t\t\tFuncionarios ja cadastrados\n");
+        printf("\n========================================================================================================================\n\n");
+        printf("\tNome: %s\n", nome);
+        printf("\tSexo: %s\n", sexo);
+        printf("\tTelefone de contato: %d\n", telefone);
+        printf("\tCPF: %d\n", cpf);
+        printf("\tIdade: %d\n", idade);
+        printf("\tEmail: %s\n", email);
+        printf("\tCargo na empresa: %s\n\n", email);
+
+
+
+
+
+
+
+
+        system("pause");
+        system("cls");
+
+
+
+
+
+    }
+
+
+
+    }while(opcao!=3);
+    printf("\n========================================================================================================================\n\n");
+    printf("\t\t\t\t\t\tObrigado por usar o programa\n");
+    printf("\t\t\t\t\t\t\tVolte sempre!\n");
+    printf("\n========================================================================================================================\n\n");
+
+
+
+    return 0;
+}
+
